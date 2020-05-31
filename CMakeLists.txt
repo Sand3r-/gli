@@ -12,8 +12,6 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
-enable_testing()
-
 add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 add_definitions(-DSOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 include_directories(".")
@@ -71,8 +69,6 @@ endmacro(addExternalPackageGTC)
 # Add subdirectory
 
 add_subdirectory(gli)
-add_subdirectory(test)
-#add_subdirectory(doc)
 
 ################################
 # Add installer
